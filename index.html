@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Mataril_Tailwind</title>
+</head>
+<body>
+    <!--header section-->
+    <header class="tinted-image ">
+        <div class="container mx-auto">
+               <!--navbar-area-->
+                <nav class="relative px-4 py-4 flex justify-between items-center  mt-5 pt-10">
+                    <a class="text-xl text-white font-bold leading-none hover:text-gray-500" href="#"> 
+                        Material tailwind React
+                    </a>
+                    <div class="lg:hidden">
+                        <button class="navbar-burger flex items-center text-white p-5">
+                            <svg class="block h-7 w-7 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <title>Mobile menu</title>
+                                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-full gap-10 pt-5">
+
+                        <li><a class="text-sm text-white  font-bold hover:text-gray-500" href="#">
+                            <i class="fa-solid fa-house text-white"></i> Home</a>
+                        </li>
+
+                        <li><a class="text-sm text-white font-bold hover:text-gray-500" href="#"><i class="fa-solid fa-user text-white"></i> Profile</a></li>
+
+                       
+                        <li><a class="text-sm text-white font-bold hover:text-gray-500" href="#"><i class="fa-sharp fa-solid fa-right-to-bracket text-white"></i> Sign In</a></li>
+
+                     
+                        <li><a class="text-sm text-white font-bold hover:text-gray-500" href="#"><i class="fa-solid fa-user-plus text-white"></i> Sign UP</a></li>
+
+                        <li><a class="text-sm text-white font-bold hover:text-gray-500" href="#"><i class="fa-solid fa-file text-white"></i> Docs</a></li>
+                    </ul>
+                    <a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6  hover:bg-gray-900 text-sm text-white font-bold  rounded-xl transition duration-200" href="#">PRO VERSION</a>
+                    <a class="hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl transition duration-200" href="#">FREE DOWNLOAD</a>
+                </nav>
+                <div class="navbar-menu relative z-50 hidden">
+                    <div class="navbar-backdrop fixed inset-0  "></div>
+                    <nav class="relative top-0 left-0 bottom- flex flex-col w-full  py-6 px-6 bg-white overflow-y-auto">
+                        <div class="flex items-center mb-8">
+                            <a class="mr-auto text-3xl font-bold leading-none" href="#">
+                                
+                            </a>
+                            <button class="navbar-close">
+                                <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div>
+                            <ul>
+                                <li class="mb-1">
+                                    <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Home</a>
+                                </li>
+                                <li class="mb-1">
+                                    <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">About Us</a>
+                                </li>
+                                <li class="mb-1">
+                                    <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Services</a>
+                                </li>
+                                <li class="mb-1">
+                                    <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Pricing</a>
+                                </li>
+                                <li class="mb-1">
+                                    <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-auto">
+                            <div class="pt-6">
+                                <a class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-xl" href="#">Sign in</a>
+                                <a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700  rounded-xl" href="#">Sign Up</a>
+                            </div>
+                            <p class="my-4 text-xs text-center text-gray-400">
+                                <span>Copyright © Rakibul Hassan</span>
+                            </p>
+                        </div>
+                    </nav>
+                </div>
+            <!--header-text-area-->
+            <div class="mt-10 pt-10 text-center">
+                <h1 class="text-white font-bold text-4xl pt-10 mt-10 pb-5">Your story starts with us.</h1>
+                <p class="text-white font-bold text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo esse fugit, earum dolore deserunt voluptatem! <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Est assumenda hic atque non!</p>
+            </div>
+            <div class="card_container grid lg:flex gap-5 justify-center">
+                <div class="card w-96 bg-white shadow-xl p-4 text-center lg:mt-10 rounded-lg">
+                    <i class="fa-solid fa-star text-4xl p-3 bg-blue-500 rounded-full text-white"></i>
+                   <h1 class="mt-10 mb-5 font-bold">Awarded Agebcy</h1>
+                   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, excepturi molestiae aut optio nesciunt incidunt itaque aliquam. Reiciendis, quibusdam iusto.</p>
+                  </div>
+
+                  <div class="card w-96 bg-white shadow-xl p-4 text-center lg:mt-10 rounded-lg">
+                    <i class="fa-solid fa-arrow-rotate-left text-4xl p-3 bg-red-500 px-3 rounded-full text-white"></i>
+                    <h1 class="mt-10 mb-5 font-bold">Free Revisions</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, excepturi molestiae aut optio nesciunt incidunt itaque aliquam. Reiciendis, quibusdam iusto.</p>
+                  </div>
+
+                  <div class="card w-96 bg-white shadow-xl p-4 text-center lg:mt-10 rounded-lg">
+                    <i class="fa-solid fa-fingerprint text-4xl p-3 bg-blue-500 rounded-full text-white"></i>
+                    <h1 class="mt-10 mb-5 font-bold">Verified Company</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, excepturi molestiae aut optio nesciunt incidunt itaque aliquam. Reiciendis, quibusdam iusto.</p>
+                  </div>
+
+               
+            </div>
+        </div>
+    </header>
+    <!--hero-section-->
+    <section class="hero_section container mx-auto">
+        <div class="grid lg:flex justify-center lg:gap-10 gap-5 pl-5">
+            <div class="basis-[35%] mt-10 pt-10">
+                <div>
+                    <i class="fa-solid fa-user-group text-2xl bg-white"></i>
+                    <h1 class="text-3xl font-bold mt-5 mb-5">
+                        Working with us is a pleasure
+                    </h1>
+                    <p class="font-bold mb-7">Don't let your uses guess by attaching tooltips and popoves to any element. Just make sure you enable them firdt via JavaScript.</p>
+                    <p class="mb-10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, tempora? Obcaecati dolores nulla cumque assumenda.</p>
+                    <a href="#" class="font-bold text-blue-600 border border-blue-600 p-3 rounded-md">READ MORE</a>
+                </div>
+            </div>
+            <div class="card w-96 bg-base-100 shadow-xl basis-[35%] rounded-md">
+                <figure class="px-5 pt-10">
+                  <img src="images/bg_image/services.avif" alt="Shoes" class="rounded-xl shadow-xl w-full h-64" />
+                </figure>
+                 <h1 class="text-2xl font-bold mt-4 ml-5">Top Notch Services</h1>
+                 <p class="mt-5 ml-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A sit tempora doloribus aperiam fugiat autem!</p>
+            </div>
+        </div>
+    </section>
+    <!--our-heros-section-->
+    <section class="container mx-auto mt-10 pt-10">
+       <div class="text-center mb-10 pb-5">
+        <h1 class="text-3xl font-bold">Here are our heroes</h1>
+        <p class="font-bold mt-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas provident quasi placeat expedita cumque <br> facilis beatae, voluptas neque. Autem,
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+       </div>
+       <div class="grid  md:flex justify-center md:gap-10 gap-10 mb-10 pb-10 mx-10">
+        <div class="w-[100%]">
+            <img src="images/heros_img/download (2).jfif" alt="" class="rounded-md w-[100%]">
+            <h1 class=" text-2xl pt-5 pb-2 text-center">Ryan Tompson</h1>
+            <p class="text-center">Web Developer</p>
+            <div class="mt-5  flex gap-10 justify-center">
+                <i class="fa-brands fa-twitter text-blue-600"></i>
+                <i class="fa-brands fa-facebook text-blue-600"></i>
+                <i class="fa-brands fa-instagram text-red-300"></i>
+            </div>
+        </div>
+
+        <div class="w-[100%]">
+            <img src="images/heros_img/download (1).jfif" alt="" class="rounded-md w-[100%]">
+            <h1 class=" text-2xl pt-5 pb-2 text-center">Romina Hadid</h1>
+            <p class="text-center">Web Developer</p>
+            <div class="mt-5  flex gap-10 justify-center">
+                <i class="fa-brands fa-twitter text-blue-600"></i>
+                <i class="fa-brands fa-facebook text-blue-600"></i>
+                <i class="fa-brands fa-instagram text-red-300"></i>
+            </div>
+        </div>
+
+        <div class="w-[100%]">
+            <img src="images/heros_img/download (2).jfif" alt="" class="rounded-md w-[100%]">
+            <h1 class=" text-2xl pt-5 pb-2 text-center">Rakibul Hassan</h1>
+            <p class="text-center">Web Developer</p>
+            <div class="mt-5  flex gap-10 justify-center">
+                <i class="fa-brands fa-twitter text-blue-600"></i>
+                <i class="fa-brands fa-facebook text-blue-600"></i>
+                <i class="fa-brands fa-instagram text-red-300"></i>
+            </div>
+        </div>
+
+        <div class="w-[100%]">
+            <img src="images/heros_img/download.jfif" alt="" class="rounded-md w-[100%]">
+            <h1 class=" text-2xl pt-5 pb-2 text-center">Alexa Smith</h1>
+            <p class="text-center">Web Developer</p>
+            <div class="mt-5  flex gap-10 justify-center">
+                <i class="fa-brands fa-twitter text-blue-600 "></i>
+                <i class="fa-brands fa-facebook text-blue-600 "></i>
+                <i class="fa-brands fa-instagram text-red-300"></i>
+            </div>
+        </div>
+       </div>
+    </section>
+    <!--footer-area-->
+    <footer class="bg-slate-100">
+        <div class="container mx-auto pt-10  pb-10 mb-5">
+            <div class="text-center mt-10 pt-10 ">
+                <h1 class="font-bold text-4xl">Build something</h1>
+                <p class="font-bold mt-5">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum veritatis ad magnam ratione, laudantium optio.
+                    <br>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, perferendis?
+                    <br>
+                    Lorem ipsum dolor sit amet.
+                </p>
+            </div>
+
+            <div class="mt-10 pt-10 grid lg:flex gap-10 mx-10 justify-center mb-10 pb-10">
+
+                <div class="mt-10 mb-10 text-center basis-[20%]">
+                    <i class="fa-solid fa-star bg-white p-5  rounded-full mb-5 shadow-xl"></i>
+                    <h1 class="text-2xl">Excelent Services</h1>
+                    <p class="mt-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, sed repellendus incidunt atque aspernatur consequatur reprehenderit totam assumenda porro quo.</p>
+                </div>
+
+                <div class="mt-10 mb-10 text-center basis-[20%]">
+                    <i class="fa-solid fa-shop bg-white p-5  rounded-full mb-5 shadow-xl"></i>
+                    <h1 class="text-2xl">Excelent Services</h1>
+                    <p class="mt-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, sed repellendus incidunt atque aspernatur consequatur reprehenderit totam assumenda porro quo.</p>
+                </div>
+
+                <div class="mt-10 mb-10 text-center basis-[20%]">
+                    <i class="fa-sharp fa-solid fa-rocket bg-white p-5  rounded-full mb-5 shadow-xl"></i>
+                    <h1 class="text-2xl">Excelent Services</h1>
+                    <p class="mt-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, sed repellendus incidunt atque aspernatur consequatur reprehenderit totam assumenda porro quo.</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h1 class="text-center text-5xl font-bold mt-10 mb-5">Want to work with us?</h1>
+                    <p class="text-center font-bold text-2xl">Complete this form and we will get back to you in 24 hours.</p>
+                </div>
+                <div class="mt-10 pt-10">
+                    
+<form class="lg:w-[50%] mx-auto">
+   
+   
+   
+    <div class="grid sm:flex gap-5 mx-10 ">
+      <div class="relative z-0 w-1/2 mb-6 group">
+          <input type="text" name="floating_first_name" id="floating_first_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+          <label for="floating_first_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Your Name</label>
+      </div>
+      <div class="relative z-0 w-1/2 mb-6 ">
+        <input type="email" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+        <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
+    </div>
+    </div>
+    <div class="mx-10">
+     
+      <div class="relative z-0 w-full  mb-6">
+          <input type="text" name="floating_company" id="floating_company" class="block py-2.5 px-0 w-full h-48 text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+          <label for="floating_company" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Messege</label>
+      </div>
+    </div>
+   <div class="text-center">
+    <button type="submit" class="text-white mt-5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ">SEND MESSAGE</button>
+   </div>
+  </form>
+
+  <div class="grid lg:flex mx-10 pl-10">
+    <div class=" mt-10 pt-10 basis-[65%]">
+        <h1 class="text-3xl mt-5 mb-5 font-bold">Material Tailwind</h1>
+        <p class="font-bold mb-5">Easy to use React components for Tailwind CSS and Material Design.</p>
+        <div class="">
+            <i class="fa-brands fa-facebook text-blue-500 p-2 rounded-full bg-white mr-2"></i>
+            <i class="fa-brands fa-instagram text-blue-600 rounded-full bg-white p-2 mr-2"></i>
+            <i class="fa-brands fa-twitter text-blue-300 p-2 rounded-full bg-white mr-2"></i>
+            <i class="fa-brands fa-github p-2 rounded-full bg-white mr-2"></i>
+            <i class="fa-brands fa-youtube text-red-500 p-2 rounded-full bg-white mr-2"></i>
+        </div>
+    </div>
+    <div class="flex justify-center gap-5 pt-10 mt-10 mb-10">
+        <div class=" mt-5 ">
+            <h1 class="font-bold">USEFUL LINKS</h1>
+             <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Github</a></li>
+                <li><a href="#">Free Products</a></li>
+             </ul>
+        </div>
+        <div class="text-center mt-5">
+            <h1 class="font-bold">OTHER RESOURCES</h1>
+             <ul>
+                <li><a href="#">MIT License</a></li>
+                <li><a href="#">Contribute</a></li>
+                <li><a href="#">Change Log</a></li>
+                <li><a href="#">Contact Us</a></li>
+             </ul>
+        </div>
+    </div>
+  </div>
+  <hr>
+  <div class="mt-10 text-center">
+    <h1>Copyright &#169; 2023 Rakibul Hassan Shehab </h1>
+  </div>
+
+  
+               
+</footer>
+            
+            <script>
+            // Burger menus
+            document.addEventListener('DOMContentLoaded', function() {
+                // open
+                const burger = document.querySelectorAll('.navbar-burger');
+                const menu = document.querySelectorAll('.navbar-menu');
+            
+                if (burger.length && menu.length) {
+                    for (var i = 0; i < burger.length; i++) {
+                        burger[i].addEventListener('click', function() {
+                            for (var j = 0; j < menu.length; j++) {
+                                menu[j].classList.toggle('hidden');
+                            }
+                        });
+                    }
+                }
+            
+                // close
+                const close = document.querySelectorAll('.navbar-close');
+                const backdrop = document.querySelectorAll('.navbar-backdrop');
+            
+                if (close.length) {
+                    for (var i = 0; i < close.length; i++) {
+                        close[i].addEventListener('click', function() {
+                            for (var j = 0; j < menu.length; j++) {
+                                menu[j].classList.toggle('hidden');
+                            }
+                        });
+                    }
+                }
+            
+                if (backdrop.length) {
+                    for (var i = 0; i < backdrop.length; i++) {
+                        backdrop[i].addEventListener('click', function() {
+                            for (var j = 0; j < menu.length; j++) {
+                                menu[j].classList.toggle('hidden');
+                            }
+                        });
+                    }
+                }
+            });
+</script>
+<script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>
